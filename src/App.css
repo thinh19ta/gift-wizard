@@ -1,38 +1,30 @@
-.App {
-  text-align: center;
+.progress-bar-container {
+  position: relative;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.top-right-text {
+  position: absolute;
+  top: -1.5rem; /* Adjust this value to move the text higher or lower */
+  font-weight: bold;
+  transition: left 0.3s; /* Smooth transition */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.progress-bar {
+  height: 1.5rem;
+  border-radius: 0.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.progress-bar-fill {
+  background-color: #76c7c0;
+  transition: width 0.3s;
+}
+
+.wizard-navigation button {
+  margin: 5px;
+}
+
+.btn.active {
+  background-color: #007bff;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

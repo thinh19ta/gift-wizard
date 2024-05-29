@@ -1,25 +1,15 @@
-import logo from './logo.svg';
+import React from 'react';
+import Wizard from './components/Wizard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className="text-center mt-5">Gift Selection Wizard</h1>
+      <Wizard />
     </div>
   );
-}
+};
 
 export default App;
